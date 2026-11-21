@@ -1,0 +1,50 @@
+# Environment / secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Large dataset / data files
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Datasets (keep out of repo)
+data/raw/*
+data/samples/*
+data/processed/*
+!data/raw/.gitkeep
+!data/samples/.gitkeep
+!data/processed/.gitkeep
+
+# Outputs and logs
+outputs/*/*
+logs/*
+!outputs/**/.gitkeep
+!logs/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
